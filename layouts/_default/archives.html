@@ -2,7 +2,7 @@
 
 <header class="page-header">
   <h1>
-    {{ .Title }}
+    {{ .Title }} 
     {{- if (.Param "ShowRssButtonInSectionTermList") }}
     {{- $rss := (.OutputFormats.Get "rss") }}
     {{- if (eq .Kind `page`) }}
@@ -66,6 +66,7 @@
           </span>
           {{- end }}
         </h3>
+
         <div class="archive-meta">
           {{- partial "post_meta.html" . -}}
         </div>
